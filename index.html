@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Home</title>
-
-    <!--colocar icone em todas as paginas do site-->
     <link rel="icon" href="images/music.ico">
 </head>
 <style>
@@ -21,16 +17,52 @@
         font-size: 5vh;
         color: white;
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo{
+        height: 100px;
     }
 
     nav>ul {
         display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+
+    #menuNav{
+        font-size: 28px;
     }
 
     ul>li {
         margin-right: 20px;
         list-style: none;
+        text-decoration-style: none;
+
+        
+    }
+
+    li>a:hover{
+        background-color: white;
+        color: black;
+    }
+
+    a:link{
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 20px 0;
+    }
+
+    .indexGallery{
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .indexGallery>img{
+        width: 200px;
+        margin: 10px;
     }
 
 
@@ -46,16 +78,16 @@
     <header>
         <img id="logo" src="images/music.ico" alt="">
         <nav>
-            <ul>
+            <ul id="menuNav">
                 <li><a href="http://">Home</a></li>
-                <li><a href="http://">Banda 1</a></li>
-                <li><a href="http://">Banda 2</a></li>
-                <li><a href="http://">Banda 3</a></li>
-                <li><a href="http://">Banda 4</a></li>
-                <li><a href="http://">Banda 5</a></li>
-                <li><a href="http://">Banda 6</a></li>
-                <li><a href="http://">Banda 7</a></li>
-                <li><a href="http://">Contato</a></li>
+                <li><a href="beatles.html">Beatles</a></li>
+                <li><a href="http://">Queen</a></li>
+                <li><a href="http://">U2</a></li>
+                <li><a href="http://">Rolling Stones</a></li>
+                <li><a href="http://">Led Zeppelin</a></li>
+                <li><a href="http://">Pink Floyd</a></li>
+                <li><a href="http://">Black Sabbath</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -91,7 +123,17 @@
             et quod eum quaerat possimus impedit asperiores mollitia vel molestiae architecto. Praesentium minima harum
             facere.
         </p>
-        <img id="homeScreen" src="images/showHomepage.jpeg" alt="">
+        <img id="homeScreen" src="images/showHomepage.jpeg" alt="" title="teste">
+        <h2>Bandas</h2>
+        <div class="indexGallery">
+            <img src="images/beatles/beatles.jpg" alt="">
+            <img src="images/beatles/beatles.jpg" alt="">
+            <img src="images/beatles/beatles.jpg" alt="">
+            <img src="images/beatles/beatles.jpg" alt="">
+            <img src="images/beatles/beatles.jpg" alt="">
+            <img src="images/beatles/beatles.jpg" alt="">
+            <img src="images/beatles/beatles.jpg" alt="Integrantes dos beatles atravessando a rua na faixa de pedestres" title="beatles">
+        </div>
     </main>
     <footer>
         Footer
