@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+    <link rel="icon" href="images/music.ico">
+    <style>
+        /** FORMATAÇÃO GERAL **/
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        main {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .margin-top {
+            margin-top: 50px;
+        }
+
+        /** HEADER NAVBAR E LOGO **/
+        header {
+            background-color: black;
+            font-size: 5vh;
+            margin-bottom: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            height: 100px;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #menuNav {
+            font-size: 24px;
+        }
+
+        nav {
+            margin-bottom: 10px;
+        }
+
+        /** LINKS **/
+
+        ul>li {
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        li>a:visited {
+            color: white;
+        }
+
+
+        li>a:hover {
+            color: blue;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 20px 0;
+        }
+
+        /** FORMATAÇÃO TEXTO PRINCIPAL **/
+
+        article {
+            margin-right: 50px;
+        }
+
+        #mainPicture {
+            width: 400px;
+        }
+
+        .mainText {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .mainText>h1 {
+            display: block;
+        }
+
+        /** FORMATAÇÃO SUMÁRIO **/
+
+        .sumario a:visited{
+            color: black;
+        }
+
+        .sumario a:link{
+            color: black;
+        }
+
+        .sumario a:hover{
+            color: blue;
+        }
+
+        .sumario{
+            border: solid 1px black;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .sumario li{
+            width: 100%;
+        }
+
+        .sumario li:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        /** FORMATAÇÃO TABELAS **/
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        /** FORMATAÇÃO GALERIA **/
+
+        .integrantesImagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .integrantesImagens>img {
+            margin-right: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            height: 500px;
+        }
+
+        .gallery>img {
+            width: 400px;
+            height: 235px;
+            margin: 10px 10px 0 0;
+        }
+
+        /** FOOTER **/
+
+        footer {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            height: 50px;
+            font-size: 28px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/music.ico"
+            alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
+        <nav>
+            <ul id="menuNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beatles.html">Beatles</a></li>
+                <li><a href="queen.html">Queen</a></li>
+                <li><a href="u2.html">U2</a></li>
+                <li><a href="rollingstones.html">Rolling Stones</a></li>
+                <li><a href="ledzeppelin.html">Led Zeppelin</a></li>
+                <li><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li><a href="blacksabbath.html">Black Sabbath</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="margin-top" id="historia">
+            <h1><u>Queen</u></h1>
+            <div class="mainText">
+
+                <article>
+                    <h3>História da banda</h3>
+                    <p> Queen foi uma banda britânica de rock, fundada em 1970 e ativa, sob sua formação clássica, até
+                        1991. O grupo, formado por <b>Brian May (guitarra e vocais), Freddie Mercury (vocais e piano),
+                            John
+                            Deacon (baixo) e Roger Taylor (bateria e vocais)</b> é frequentemente citado como um dos
+                        expoentes
+                        do seu estilo, também sendo um dos recordistas de vendas de discos a nível mundial. A música da
+                        banda também é conhecida por ser altamente eclética, variando entre várias vertentes do rock. <br><br>
+                        Originalmente, a banda surgiu a partir do trio <i>Smile</i> , formado por Brian May, Roger
+                        Taylor e o
+                        baixista Tim Staffell. Com o fim do conjunto, Freddie Mercury e John Deacon, juntamente com May
+                        e Roger, estabeleceram a formação de um novo grupo em meados de 1970. Os seus dois primeiros
+                        álbuns alcançaram pouco sucesso, até que ganhou popularidade internacional por meio de <i>Sheer
+                            Heart Attack (1974)</i> e, principalmente, por <i>A Night at the Opera (1975)</i> , cujos
+                        singles <i>"Bohemian
+                            Rhapsody" e "You're My Best Friend"</i> alcançaram bons desempenhos. Mais tarde, a
+                        popularidade do
+                        quarteto estendeu-se com News of the World, em 1977, devido aos hits <i>"We Will Rock You" e "We
+                            Are the Champions"</i>, bem como com <i>"Crazy Little Thing Called Love" e "Another One
+                            Bites the
+                            Dust"</i>, de <i>The Game</i>, lançado em 1980.<br><br>
+
+                        Durante a década de 1980, o Queen passou a adotar sintetizadores nas suas músicas, e apesar de
+                        alguns sucessos como <i>"Under Pressure"</i> , a banda recebeu fortes críticas da mídia
+                        especializada,
+                        perdeu grande parte de sua popularidade em território norte-americano, e passou por crises
+                        internas. Em meio às críticas, a banda ainda lançou sucessos: O álbum <i>The Works (1984)</i>
+                        conteve
+                        os singles <i>"Radio Ga Ga" e "I Want to Break Free"</i> , que alcançaram notoriedade no Reino
+                        Unido e
+                        em países da América do Sul, como o Brasil e Argentina. Em 1985, o conjunto realizou uma das
+                        suas performances mais memoráveis no evento <i>Live Aid</i> , e em 1986 a última turnê. Em 1987,
+                        o
+                        vocalista Freddie Mercury contraiu o vírus do HIV. Com isso, a banda continuou produzindo
+                        trabalhos que se tornaram os últimos registros em vida de seu cantor. <i>The Miracle (1989) e
+                            Innuendo (1991)</i> foram melhor recebidos que os anteriores, e também ganharam avaliações
+                        mais
+                        positivas após a morte de Freddie. Brian, Roger e John trabalharam em algumas faixas arquivadas
+                        durante dois anos e, com isso, foi lançado o último trabalho inédito do quarteto, <i>Made in
+                            Heaven
+                            (1995)</i>. <br><br> Em 1997, o baixista John Deacon aposentou-se do mundo musical.
+
+                        Nos anos seguintes, Brian May e Roger Taylor seguiram carreiras a solo, tocaram com vários
+                        músicos convidados e, com o repertório do Queen, chegaram a se apresentar com artistas como
+                        <b>Elton John</b> . Como shows com o nome da banda, destacam-se as parcerias feitas com Paul
+                        Rodgers e
+                        Adam Lambert, com quem formaram, respectivamente, os supergrupos Queen + Paul Rodgers (entre
+                        2004 a 2009) e Queen + Adam Lambert (de 2011 aos dias atuais). A banda já vendeu mais de
+                        trezentos milhões de discos ao redor do mundo, tendo lançado quinze álbuns inéditos, várias
+                        coletâneas e trabalhos em vídeo. O grupo foi incluído no <i>Rock and Roll Hall of Fame</i> em
+                        2001 e
+                        todos os seus integrantes foram introduzidos ao <i>Songwriters Hall of Fame</i> em 2003. Além
+                        disso,
+                        ganhou uma estrela no Passeio da Fama em Hollywood em 2005 e é apontado como influência para
+                        vários artistas do cenário rock e pop, bem como foi tema do musical <i>We Will Rock You</i> e do
+                        filme
+                        <i>Bohemian Rhapsody</i>, de 2018.
+                    </p>
+                    <br>
+                    <p>Fonte: <a href="https://pt.wikipedia.org/wiki/U2" style="color: blue;">Wikipedia
+                            Queen</a></p>
+                </article>
+                <aside>
+                    <img id="mainPicture" src="images/queen/bohemianrhapsody.jpg" title="Imagem do clipe Bohemian Rhapsody do Queen" alt="A imagem mostra em um fundo escuro, o rosto dos integrantes da banda Queen e as mãos de Freddy Mercury abaixo do rosto dele.">
+                    <p>Cena do clipe musical <i>Bohemian Rhapsody</i> da banda.</p>
+                    <h3 style="text-align: center;">Sumário</h3>
+                    <ol class="sumario">
+                        <li><a href="#historia">História da Banda</a></li>
+                        <li><a href="#musicas">Músicas Principais</a></li>
+                        <li><a href="#integrantes">Integrantes</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+        <br>
+        <section class="margin-top" id="musicas">
+            <h3>Principais Músicas</h3>
+            <div class="topMusicas">
+                <table style="border: solid 1px black;">
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Ano de Lançamento</th>
+                    </tr>
+                    <tr>
+                        <td>Don't Stop Me Now</td>
+                        <td>1970</td>
+                    </tr>
+                    <tr>
+                        <td>Another One Bites the Dust</td>
+                        <td>1969</td>
+                    </tr>
+                    <tr>
+                        <td>We Will Rock You</td>
+                        <td>1968</td>
+                    </tr>
+                    <tr>
+                        <td>I Want to Break Free</td>
+                        <td>1965</td>
+                    </tr>
+                    <tr>
+                        <td>Bohemian Rhapsody</td>
+                        <td>1975</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="margin-top" id="integrantes" >
+            <div class="integrantes">
+                <h3>Integrantes</h3>
+                <div class="integrantesImagens">
+                    <img src="images/queen/brianmay.jpg"
+                        alt="A foto 3x4 mostra Brian May quando ainda era jovem com uma expressão sorridente."
+                        title="Brian May">
+                    <img src="images/queen/freddymercury.jpg"
+                        alt="A foto 3x4 mostra Freddy Mercury quando ainda era jovem."
+                        title="Freddy Mercury">
+                    <img src="images/queen/johndeacon.jpg"
+                        alt="A foto 3x4 mostra John Deacon quando ainda era jovem com uma expressão seria olhando diretamente para a camêra."
+                        title="John Deacon">
+                    <img src="images/queen/rogertaylor.jpg"
+                        alt="A foto 3x4 mostra Roger Taylor quando ainda era jovem com uma expressão sorridente."
+                        title="Roger Taylor">
+                </div>
+            </div>
+        </section>
+        <section class="margin-top" id="galeria">
+            <h3>Galeria</h3>
+            <div class="gallery">
+                <img src="images/queen/showqueen.jpg" title="Integrantes do queen em show ao vivo."
+                    alt="A imagem mostra os quatro integrantes da banda no palco em show ao vivo com seus instrumentos em mãos acenando para o publico. ">
+                <img title="Freddy Mercury em show ao vivo." src="images/queen/freddysoloshow.jpg"
+                    alt="A imagem mostra Freddy Mercury de costas sem camisa com o microfone no palco em frente a uma multidão.">
+                <img title="Freddy Mercury em clipe 'I Want to Break Free'." src="images/queen/breakfree.jpg"
+                    alt="A imagem mostra Freddy Mercury no clipe 'I Want to Break Free' vestido de mulher usando salto alto e uma saia de couro em uma sala de estar com uma pessoa lendo jornal atras dele.">
+                <img title="Freddy Mercury vestido de rei em show ao vivo." src="images/queen/freddyking.jpg"
+                    alt="A imagem mostra em 3x4 Freddy Mercury vestido com uma coroa e uma capa de rei com uma das mãos no peito com uma expressão sorridente.">
+            </div>
+        </section>
+        <a href="#logo" style="color: black;">Voltar ao topo</a>
+    </main>
+    <footer>
+        <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
+    </footer>
+</body>
+</html>

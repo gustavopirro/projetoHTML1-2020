@@ -8,7 +8,7 @@
     <title>Home</title>
     <link rel="icon" href="images/music.ico">
     <style>
-
+        /** FORMATAÇÃO GERAL **/
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
         * {
@@ -22,11 +22,12 @@
             margin-right: 50px;
         }
 
-        .margin-top {
+        .margin-top{
             margin-top: 50px;
         }
 
         /** HEADER NAVBAR E LOGO **/
+        
         header {
             background-color: black;
             font-size: 5vh;
@@ -63,10 +64,6 @@
             list-style: none;
         }
 
-        ol>li {
-            margin-left: 15px;
-        }
-
         li>a:visited {
             color: white;
         }
@@ -82,10 +79,96 @@
             padding: 20px 0;
         }
 
+        /** FORMATAÇÃO TEXTO PRINCIPAL **/
+
+        article {
+            margin-right: 50px;
+        }
+
+        #mainPicture {
+            width: 400px;
+        }
+
+        .mainText {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .mainText>h1 {
+            display: block;
+        }
+
+        /** FORMATAÇÃO TABELAS **/
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+                /** FORMATAÇÃO SUMÁRIO **/
+
+                .sumario a:visited{
+            color: black;
+        }
+
+        .sumario a:link{
+            color: black;
+        }
+
+        .sumario a:hover{
+            color: blue;
+        }
+
+        .sumario{
+            border: solid 1px black;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .sumario li{
+            width: 100%;
+        }
+
+        .sumario li:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        /** FORMATAÇÃO GALERIA **/
+
+        .integrantesImagens {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .integrantesImagens>img {
+            margin-right: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            height: 500px;
+        }
+
+        .gallery>img {
+            width: 400px;
+            height: 235px;
+            margin: 10px 10px 0 0;
+        }
+
         /** FOOTER **/
 
         footer {
-            margin-top: 50px;
             display: flex;
             align-items: center;
             background-color: black;
@@ -93,13 +176,14 @@
             font-size: 28px;
             color: white;
         }
+
     </style>
 </head>
 
 <body>
     <header>
         <img id="logo" src="images/music.ico"
-            alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
+        alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
         <nav>
             <ul id="menuNav">
                 <li><a href="index.html">Home</a></li>
@@ -114,21 +198,6 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Formulário para contato</h2>
-        <form action="/action_page.php" id="contato">
-            <label for="nome">Nome:</label><br>
-            <input type="text" name="nome" id="nome"/><br><br>
-            <label for="telefone" >Telefone:</label><br>
-            <input type="text" name="telefone" id="telefone"/><br><br>
-            <label for="email">Email:</label><br>
-            <input type="text" name="email" id="email" /><br><br>
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea name="mensagem" cols="30" rows="10" id="mensagem"></textarea>
-            <br><br>
-            <button>Enviar</button>
-        </form>
-    </main>
     <footer>
         <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
     </footer>

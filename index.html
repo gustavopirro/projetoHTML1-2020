@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,130 +11,191 @@
 
     <title>Home</title>
     <link rel="icon" href="images/music.ico">
+
+    <style>
+        /** FORMATAÇÃO GERAL **/
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        main {
+            margin-left: 50px;
+        }
+
+        .margin-top{
+            margin-top: 50px;
+        }
+
+        /** HEADER NAVBAR E LOGO **/
+
+        header {
+            background-color: black;
+            font-size: 5vh;
+            margin-bottom: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            height: 100px;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #menuNav {
+            font-size: 24px;
+        }
+
+        nav {
+            margin-bottom: 10px;
+        }
+
+
+
+        /** FORMATAÇÃO TEXTO PRINCIPAL **/
+
+        .mainPicture {
+            width: 700px;
+            margin-top: 10px;
+        }
+
+        /** LINKS **/
+
+        ul>li {
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        li>a:hover {
+            color: blue;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: whitesmoke;
+            padding: 20px 0;
+        }
+
+        /** FORMATAÇÃO GALERIA **/
+
+        .olStyle a {
+            color: black;
+        }
+
+        .olStyle li {
+            margin: 5px 0 0 15px;
+        }
+
+        .olStyle img {
+            width: 200px;
+            height: 150px;
+        }
+
+        /** FOOTER **/
+
+        footer {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            height: 50px;
+            font-size: 28px;
+            color: white;
+        }
+    </style>
 </head>
-<style>
-    header {
-        background-color: grey;
-        font-size: 5vh;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #logo{
-        height: 100px;
-    }
-
-    nav>ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    #menuNav{
-        font-size: 28px;
-    }
-
-    ul>li {
-        margin-right: 20px;
-        list-style: none;
-        text-decoration-style: none;
-
-        
-    }
-
-    li>a:hover{
-        background-color: white;
-        color: black;
-    }
-
-    a:link{
-        text-decoration: none;
-        color: whitesmoke;
-        padding: 20px 0;
-    }
-
-    .indexGallery{
-        width: 900px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .indexGallery>img{
-        width: 200px;
-        margin: 10px;
-    }
-
-
-    footer {
-        background-color: grey;
-        height: 5vh;
-        font-size: 28px;
-        color: white;
-    }
-</style>
 
 <body>
     <header>
-        <img id="logo" src="images/music.ico" alt="">
+        <img id="logo" src="images/music.ico"
+        alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
         <nav>
             <ul id="menuNav">
-                <li><a href="http://">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="beatles.html">Beatles</a></li>
-                <li><a href="http://">Queen</a></li>
-                <li><a href="http://">U2</a></li>
-                <li><a href="http://">Rolling Stones</a></li>
-                <li><a href="http://">Led Zeppelin</a></li>
-                <li><a href="http://">Pink Floyd</a></li>
-                <li><a href="http://">Black Sabbath</a></li>
+                <li><a href="queen.html">Queen</a></li>
+                <li><a href="u2.html">U2</a></li>
+                <li><a href="rollingstones.html">Rolling Stones</a></li>
+                <li><a href="ledzeppelin.html">Led Zeppelin</a></li>
+                <li><a href="pinkfloyd.html">Pink Floyd</a></li>
+                <li><a href="blacksabbath.html">Black Sabbath</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>História da música</h1>
-        <p>texto descrevendo o conteúdo do site
-            </br>
-            </br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi earum explicabo magnam, nulla iusto hic
-            maiores et exercitationem iste, atque nesciunt, rerum corporis. Illo quibusdam doloremque sed dolorum,
-            excepturi maxime!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facilis nemo itaque fuga explicabo.
-            Odit, reprehenderit maxime quisquam reiciendis consequatur similique officiis eaque, fugit quam sed
-            distinctio nobis, rem optio.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto reprehenderit facere vel repellendus vitae.
-            Aliquam placeat debitis incidunt ea! Voluptatum fugit deserunt ab aperiam atque, tempore est voluptas aut
-            iste!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed officia! Beatae deleniti voluptas,
-            debitis porro assumenda temporibus vero dolor voluptatem quas ipsum quis qui eius expedita non. Tempore,
-            omnis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam aperiam itaque velit molestias unde est
-            repellendus? Id modi aliquam nobis. Debitis, consequuntur quisquam aliquam quibusdam reiciendis eum
-            cupiditate architecto?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias atque eaque, minus porro quibusdam
-            repellendus ut eum ullam ab. Dolorum optio vero perferendis impedit id magni quod eaque quis dignissimos?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam, illum voluptatem magni deleniti in,
-            et quod eum quaerat possimus impedit asperiores mollitia vel molestiae architecto. Praesentium minima harum
-            facere.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam, illum voluptatem magni deleniti in,
-            et quod eum quaerat possimus impedit asperiores mollitia vel molestiae architecto. Praesentium minima harum
-            facere.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam, illum voluptatem magni deleniti in,
-            et quod eum quaerat possimus impedit asperiores mollitia vel molestiae architecto. Praesentium minima harum
-            facere.
-        </p>
-        <img id="homeScreen" src="images/showHomepage.jpeg" alt="" title="teste">
-        <h2>Bandas</h2>
-        <div class="indexGallery">
-            <img src="images/beatles/beatles.jpg" alt="">
-            <img src="images/beatles/beatles.jpg" alt="">
-            <img src="images/beatles/beatles.jpg" alt="">
-            <img src="images/beatles/beatles.jpg" alt="">
-            <img src="images/beatles/beatles.jpg" alt="">
-            <img src="images/beatles/beatles.jpg" alt="">
-            <img src="images/beatles/beatles.jpg" alt="Integrantes dos beatles atravessando a rua na faixa de pedestres" title="beatles">
-        </div>
+        <section class="margin-top">
+            <h1><u>Nosso objetivo</u></h1>
+            <article>
+                <h3>
+                    O objetivo deste site é te contar um pouco da história de algumas das bandas mais
+                    influentes
+                    da
+                    história do Rock.
+                </h3>
+                <img class="mainPicture" id="homeScreen" src="images/showHomepage.jpeg"
+                    alt="A imagem mostra do ponto de vista da platéia, uma multidão de pessoas assistindo a um show ao vivo com o palco muito iluminado de fundo da imagem."
+                    title="Show ao vivo">
+            </article>
+        </section>
+
+        <section class="margin-top">
+            <h2>Bandas</h2>
+            <h3>Aqui estão listadas os logos e nomes das bandas sobre as quais contamos um pouco da história aqui,
+                clique
+                no nome ou nas imagens para ser redirecionado para a página contando mais detalhes da história de
+                cada
+                banda.
+
+            </h3>
+            <ol class="olStyle">
+                <li><a href="beatles.html">The Beatles<br>
+                        <img src="images/logobandas/logobeatles.jpg" title="The Beatles"
+                            alt="Logo da banda The Beatles com o nome da banda escrito em preto e branco com a fonte caracteristica da banda.">
+                    </a></li>
+                <li><a href="queen.html">Queen<br>
+                        <img src="images/logobandas/logoqueen.png" title="Queen"
+                            alt="Logo da banda Queen com o nome da banda escrito em preto e branco com a fonte caracteristica da banda, em cima é possivel ver dois leões segurando uma coroa e acima deles um passaro maior que os leões.">
+                    </a></li>
+                <li><a href="u2.html">U2<br>
+                        <img src="images/logobandas/logou2.jpg" title="U2"
+                            alt="Logo da banda U2 com o nome da banda escrito em azul com fundo preto e com instegrantes da banda no meio das letras 'U2'.">
+                    </a></li>
+                <li><a href="rollingstones.html">Rolling Stones<br>
+                        <img src="images/logobandas/logorollingstones.jpg" title="Rolling Stones"
+                            alt="Edição de comemoração dos 50 anos da banda Rolling Stones com o logo caracterisco da banda contendo uma boca aberta com a lingua à mostra, em volta é possivel ver o nome da banda e as palavras '50 anos'.">
+                        </a></li>
+                <li><a href="ledzeppelin.html">Led Zeppelin<br>
+                        <img src="images/logobandas/logoledzeppelin.jpg" title="Led Zeppelin"
+                            alt="Logo da banda Led Zeppelin com o nome da banda escrito em preto e branco com a fonte caracteristica da banda, em baixo é possivel ver algumas formas geometricas caracteristicas da banda.">
+                    </a></li>
+                <li><a href="pinkfloyd.html">Pink Floyd<br>
+                        <img src="images/logobandas/logopinkfloyd.png" title="Pink Floyd"
+                            alt="Logo da banda Pink Floyd com o nome da banda escrito em preto e branco com a fonte caracteristica da banda.">
+                    </a></li>
+                <li><a href="blacksabbath.html">Black Sabbath<br>
+                        <img src="images/logobandas/logoblacksabbath.jpg"
+                            alt="Logo da banda Black Sabbath com o nome da banda escrito em roxo com fundo preto e a fonte caracteristica da banda."
+                            title="Black Sabbath">
+                    </a></li>
+            </ol>
+        </section>
+
+        <a href="#logo" style="color: black;">Voltar ao topo</a>
     </main>
     <footer>
         <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
