@@ -5,128 +5,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Queen</title>
     <link rel="icon" href="images/music.ico">
-    <link rel="stylesheet" href="./css/queen.css">
-  
+
+    <link rel="icon" href="images/music.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/music.ico"
-            alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
-        <nav>
-            <ul id="menuNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="beatles.html">Beatles</a></li>
-                <li><a href="queen.html">Queen</a></li>
-                <li><a href="u2.html">U2</a></li>
-                <li><a href="rollingstones.html">Rolling Stones</a></li>
-                <li><a href="ledzeppelin.html">Led Zeppelin</a></li>
-                <li><a href="pinkfloyd.html">Pink Floyd</a></li>
-                <li><a href="blacksabbath.html">Black Sabbath</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <img id="logo" class="navbar-brand" style="max-height: 80px;" src="images/music.ico"
+                alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="font-size: 22px;">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beatles.html">Beatles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="queen.html">Queen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="u2.html">U2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rollingstones.html">Rolling Stones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ledzeppelin.html">Led Zeppelin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pinkfloyd.html">Pink Floyd</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blacksabbath.html">Black Sabbath</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="margin-top" id="historia">
-            <h1><u>Queen</u></h1>
-            <div class="mainText">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs mt-5">
+                    <h1>Queen</h1>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <article>
+                        <h3 id="historia">História da banda</h3>
+                        <p> A banda Queen começou em 1968 na cidade de Londres na Inglaterra, iniciada na época
+                            pelos
+                            integrantes <b>Brian May e Tim Stafell.</b><br>
+                            Os dois então anunciaram na faculdade em que estudavam que estavam a procura de um
+                            baterista
+                            para a banda e acabaram conhecendo <b>Roger Taylor.</b><br>
+                            No inicio a banda teria o nome de <b><i>Smile</i></b>, com este nome em 1969, assinou o
+                            primeiro seu primeiro contrato com a gravadora <i>Mercury Records</i>.<br>
+                            Em 1970 o integrante <b>Tim Stafell</b> saiu da então chamada <i>Smile</i>, no mesmo ano
+                            em
+                            que Freddy Mercury entraria no grupo, após sua entrada, o nome da banda foi trocado para
+                            o
+                            então conhecido nome <b>Queen</b> e o baixista <b>John Deacon</b> entrou para a
+                            banda.<br>
+                            Eles conseguiram gravar na época seu primeiro álbum chamado <i>Queen</i>, que ficaria
+                            conhecido depois como <i>Queen I</i>, e então com um acordo entre as gravadoras Trident
+                            e
+                            EMI, teriam conseguido sua primeira turnê.<br>
+                            Em 1974 eles lançaram seu segundo disco chamado <i>Queen II</i> que ficou entre os mais
+                            ouvidos da época além de conseguir sua primeira turnê como banda principal, que seria
+                            cancelada por conta de um dos integrantes adoecer.<br>
+                            Em 1991, após a banda fazer muito sucesso com diversos discos, o cantor Freddy Mercury
+                            revelaria a imprensa que as expeculações sobre ele ter contraido HIV eram verdadeiras,
+                            após
+                            algum tempo dessa declaração o cantor então falaceu.<br>
+                            Queen após isso lançou mais dois discos em 1995 e 1997 e sua história foi transformada
+                            em
+                            filme em 2018 com o título <i>Bohemian Rhapsody.</i></p>
+                    </article>
+                </div>
+                <div class="col-xs col-lg-4">
+                    <aside>
+                        <img class="rounded img-fluid" style="max-width: 100%;" src="images/queen/bohemianrhapsody.jpg"
+                            title="Imagem do clipe Bohemian Rhapsody do Queen"
+                            alt="A imagem mostra em um fundo escuro, o rosto dos integrantes da banda Queen e as mãos de Freddy Mercury abaixo do rosto dele.">
+                        <p>Cena do clipe musical <i>Bohemian Rhapsody</i> da banda.</p>
+                        <ol class="list-group">
+                            <li class="list-group-item list-group-item-action"><a href="#historia">História da Banda</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#musicas">Principais Músicas</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#integrantes">Integrantes</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#galeria">Galeria</a></li>
+                        </ol>
+                    </aside>
+                </div>
+            </div>
+        </div>
 
-                <article>
-                    <h3>História da banda</h3>
-                    <p>		A banda Queen começou em 1968 na cidade de Londres na Inglaterra, iniciada na época pelos integrantes <b>Brian May e Tim Stafell.</b><br>
-                        Os dois então anunciaram na faculdade em que estudavam que estavam a procura de um baterista para a banda e acabaram conhecendo <b>Roger Taylor.</b><br>
-                        No inicio a banda teria o nome de <b><i>Smile</i></b>,  com este nome em 1969, assinou o primeiro seu primeiro contrato com a gravadora <i>Mercury Records</i>.<br>
-                        Em 1970 o integrante <b>Tim Stafell</b>  saiu da então chamada <i>Smile</i>, no mesmo ano em que Freddy Mercury entraria no grupo, após sua entrada, o nome da banda foi trocado para o então conhecido nome <b>Queen</b> e o baixista <b>John Deacon</b> entrou para a banda.<br>
-                        Eles conseguiram gravar na época seu primeiro álbum chamado <i>Queen</i>, que ficaria conhecido depois como <i>Queen I</i>, e então com um acordo entre as gravadoras Trident e EMI, teriam conseguido sua primeira turnê.<br>
-                        Em 1974 eles lançaram seu segundo disco chamado <i>Queen II</i> que ficou entre os mais ouvidos da época além de conseguir sua primeira turnê como banda principal, que seria cancelada por conta de um dos integrantes adoecer.<br>
-                        Em 1991, após a banda fazer muito sucesso com diversos discos, o cantor Freddy Mercury revelaria a imprensa que as expeculações sobre ele ter contraido HIV eram verdadeiras, após algum tempo dessa declaração o cantor então falaceu.<br>
-                    Queen após isso lançou mais dois discos em 1995 e 1997 e sua história foi transformada em filme em 2018 com o título <i>Bohemian Rhapsody.</i></p>
-                </article>
-                <aside>
-                    <img id="mainPicture" src="images/queen/bohemianrhapsody.jpg" title="Imagem do clipe Bohemian Rhapsody do Queen" alt="A imagem mostra em um fundo escuro, o rosto dos integrantes da banda Queen e as mãos de Freddy Mercury abaixo do rosto dele.">
-                    <p>Cena do clipe musical <i>Bohemian Rhapsody</i> da banda.</p>
-                    <h3 style="text-align: center;">Sumário</h3>
-                    <ol class="sumario">
-                        <li><a href="#historia">História da Banda</a></li>
-                        <li><a href="#musicas">Músicas Principais</a></li>
-                        <li><a href="#integrantes">Integrantes</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                    </ol>
-                </aside>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <section>
+                        <h3 id="musicas">Principais Músicas</h3>
+                        <table class="table-hover table-striped table-bordered">
+                            <thread>
+                                <tr>
+                                    <th>Titulo</th>
+                                    <th>Ano de Lançamento</th>
+                                </tr>
+                                <tr>
+                                    <td>Don't Stop Me Now</td>
+                                    <td>1970</td>
+                                </tr>
+                            </thread>
+                            <tr>
+                                <td>Another One Bites the Dust</td>
+                                <td>1969</td>
+                            </tr>
+                            <tr>
+                                <td>We Will Rock You</td>
+                                <td>1968</td>
+                            </tr>
+                            <tr>
+                                <td>I Want to Break Free</td>
+                                <td>1965</td>
+                            </tr>
+                            <tr>
+                                <td>Bohemian Rhapsody</td>
+                                <td>1975</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
             </div>
-        </section>
-        <br>
-        <section class="margin-top" id="musicas">
-            <h3>Principais Músicas</h3>
-            <div class="topMusicas">
-                <table style="border: solid 1px black;">
-                    <tr>
-                        <th>Titulo</th>
-                        <th>Ano de Lançamento</th>
-                    </tr>
-                    <tr>
-                        <td>Don't Stop Me Now</td>
-                        <td>1970</td>
-                    </tr>
-                    <tr>
-                        <td>Another One Bites the Dust</td>
-                        <td>1969</td>
-                    </tr>
-                    <tr>
-                        <td>We Will Rock You</td>
-                        <td>1968</td>
-                    </tr>
-                    <tr>
-                        <td>I Want to Break Free</td>
-                        <td>1965</td>
-                    </tr>
-                    <tr>
-                        <td>Bohemian Rhapsody</td>
-                        <td>1975</td>
-                    </tr>
-                </table>
+        </div>
+
+        <div class="container" align="center">
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 id="integrantes">Integrantes</h3>
+                </div>
             </div>
-        </section>
-        <section class="margin-top" id="integrantes" >
-            <div class="integrantes">
-                <h3>Integrantes</h3>
-                <div class="integrantesImagens">
-                    <img src="images/queen/brianmay.jpg"
+            <div class="row">
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/queen/brianmay.jpg"
                         alt="A foto 3x4 mostra Brian May quando ainda era jovem com uma expressão sorridente."
                         title="Brian May">
-                    <img src="images/queen/freddymercury.jpg"
-                        alt="A foto 3x4 mostra Freddy Mercury quando ainda era jovem."
-                        title="Freddy Mercury">
-                    <img src="images/queen/johndeacon.jpg"
+                </div>
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/queen/freddymercury.jpg"
+                        alt="A foto 3x4 mostra Freddy Mercury quando ainda era jovem." title="Freddy Mercury">
+                </div>
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/queen/johndeacon.jpg"
                         alt="A foto 3x4 mostra John Deacon quando ainda era jovem com uma expressão seria olhando diretamente para a camêra."
                         title="John Deacon">
-                    <img src="images/queen/rogertaylor.jpg"
+                </div>
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/queen/rogertaylor.jpg"
                         alt="A foto 3x4 mostra Roger Taylor quando ainda era jovem com uma expressão sorridente."
                         title="Roger Taylor">
                 </div>
             </div>
-        </section>
-        <section class="margin-top" id="galeria">
-            <h3>Galeria</h3>
-            <div class="gallery">
-                <img src="images/queen/showqueen.jpg" title="Integrantes do queen em show ao vivo."
-                    alt="A imagem mostra os quatro integrantes da banda no palco em show ao vivo com seus instrumentos em mãos acenando para o publico. ">
-                <img title="Freddy Mercury em show ao vivo." src="images/queen/freddysoloshow.jpg"
-                    alt="A imagem mostra Freddy Mercury de costas sem camisa com o microfone no palco em frente a uma multidão.">
-                <img title="Freddy Mercury em clipe 'I Want to Break Free'." src="images/queen/breakfree.jpg"
-                    alt="A imagem mostra Freddy Mercury no clipe 'I Want to Break Free' vestido de mulher usando salto alto e uma saia de couro em uma sala de estar com uma pessoa lendo jornal atras dele.">
-                <img title="Freddy Mercury vestido de rei em show ao vivo." src="images/queen/freddyking.jpg"
-                    alt="A imagem mostra em 3x4 Freddy Mercury vestido com uma coroa e uma capa de rei com uma das mãos no peito com uma expressão sorridente.">
+
+            <div class="row mt-5">
+                <div class="col">
+                    <h3>Galeria</h3>
+                </div>
             </div>
-        </section>
-        <a href="#logo" style="color: black;">Voltar ao topo</a>
-        <p>Valide essa página no <a href="https://validator.w3.org/" target="_blank" style="color: blue;">validator.w3</a></p>
+            <div class="row">
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        src="images/queen/showqueen.jpg" title="Integrantes do queen em show ao vivo."
+                        alt="A imagem mostra os quatro integrantes da banda no palco em show ao vivo com seus instrumentos em mãos acenando para o publico. ">
+                </div>
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        title="Freddy Mercury em show ao vivo." src="images/queen/freddysoloshow.jpg"
+                        alt="A imagem mostra Freddy Mercury de costas sem camisa com o microfone no palco em frente a uma multidão.">
+                </div>
+                <div class="col-xs col-md mt-3">
+
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        title="Freddy Mercury em clipe 'I Want to Break Free'." src="images/queen/breakfree2.png"
+                        alt="A imagem mostra Freddy Mercury no clipe 'I Want to Break Free' vestido de mulher usando salto alto e uma saia de couro em uma sala de estar com uma pessoa lendo jornal atras dele.">
+                </div>
+                <div class="col-xs col-md mt-3">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        title="Freddy Mercury vestido de rei em show ao vivo." src="images/queen/freddyking.jpg"
+                        alt="A imagem mostra em 3x4 Freddy Mercury vestido com uma coroa e uma capa de rei com uma das mãos no peito com uma expressão sorridente.">
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
+    <footer class="bg-dark mt-5">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-8">
+                    <span class="text-white">Desenvolvido por: Daniel Wzoreck e Gustavo Pirró</span>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="#logo">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>

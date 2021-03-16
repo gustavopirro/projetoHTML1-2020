@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,91 +12,155 @@
 
     <title>Home</title>
     <link rel="icon" href="images/music.ico">
-    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="icon" href="images/music.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/music.ico"
-        alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
-        <nav>
-            <ul id="menuNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="beatles.html">Beatles</a></li>
-                <li><a href="queen.html">Queen</a></li>
-                <li><a href="u2.html">U2</a></li>
-                <li><a href="rollingstones.html">Rolling Stones</a></li>
-                <li><a href="ledzeppelin.html">Led Zeppelin</a></li>
-                <li><a href="pinkfloyd.html">Pink Floyd</a></li>
-                <li><a href="blacksabbath.html">Black Sabbath</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <img id="logo" class="navbar-brand" style="max-height: 80px;" src="images/music.ico"
+                alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="font-size: 22px;">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beatles.html">Beatles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="queen.html">Queen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="u2.html">U2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rollingstones.html">Rolling Stones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ledzeppelin.html">Led Zeppelin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pinkfloyd.html">Pink Floyd</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blacksabbath.html">Black Sabbath</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="margin-top">
-            <h1><u>Nosso objetivo</u></h1>
-            <article>
-                <h3>
-                    O objetivo deste site é te contar um pouco da história de algumas das bandas mais
-                    influentes
-                    da
-                    história do Rock.
-                </h3>
-                <img class="mainPicture" id="homeScreen" src="images/showHomepage.jpeg"
-                    alt="A imagem mostra do ponto de vista da platéia, uma multidão de pessoas assistindo a um show ao vivo com o palco muito iluminado de fundo da imagem."
-                    title="Show ao vivo">
+    <main class="bg-light">
+        <section>
+            <div class="container">
+                <div align="center" class="row">
+                    <div class="column mt-5 mb-5">
+                        <h1>Nosso objetivo</h1>
+                        <article>
+                            <h3>
+                                O objetivo deste site é te contar um pouco da história de algumas das bandas mais
+                                influentes
+                                da
+                                história do Rock.
+                            </h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img class="rounded img-fluid" style="max-width: 100%;" src="images/showHomepage.jpeg"
+                            alt="A imagem mostra do ponto de vista da platéia, uma multidão de pessoas assistindo a um show ao vivo com o palco muito iluminado de fundo da imagem."
+                            title="Show ao vivo">
+                    </div>
+                </div>
+            </div>
             </article>
         </section>
 
-        <section class="margin-top">
-            <h2>Bandas</h2>
-            <h3>Aqui estão listadas os logos e nomes das bandas sobre as quais contamos um pouco da história aqui,
-                clique
-                no nome ou nas imagens para ser redirecionado para a página contando mais detalhes da história de
-                cada
-                banda.
+        <section>
+            <div class="container" align="center">
+                <div class="row">
+                    <div class="col mt-5 mb-5">
+                        <h3>Aqui estão listadas os logos e nomes das bandas sobre as quais contamos um pouco da história
+                            aqui,
+                            clique nas imagens para saber mais da
+                            história de
+                            cada
+                            banda.
 
-            </h3>
-            <ol class="olStyle">
-                <li><a href="beatles.html">The Beatles<br>
-                        <img src="images/logobandas/logobeatles.jpg" title="The Beatles"
-                            alt="Logo da banda The Beatles com o nome da banda escrito em preto e branco com a fonte caracteristica da banda.">
-                    </a></li>
-                <li><a href="queen.html">Queen<br>
-                        <img src="images/logobandas/logoqueen.png" title="Queen"
-                            alt="Logo da banda Queen com o nome da banda escrito em preto e branco com a fonte caracteristica da banda, em cima é possivel ver dois leões segurando uma coroa e acima deles um passaro maior que os leões.">
-                    </a></li>
-                <li><a href="u2.html">U2<br>
-                        <img src="images/logobandas/logou2.jpg" title="U2"
-                            alt="Logo da banda U2 com o nome da banda escrito em azul com fundo preto e com instegrantes da banda no meio das letras 'U2'.">
-                    </a></li>
-                <li><a href="rollingstones.html">Rolling Stones<br>
-                        <img src="images/logobandas/logorollingstones.jpg" title="Rolling Stones"
-                            alt="Edição de comemoração dos 50 anos da banda Rolling Stones com o logo caracterisco da banda contendo uma boca aberta com a lingua à mostra, em volta é possivel ver o nome da banda e as palavras '50 anos'.">
-                        </a></li>
-                <li><a href="ledzeppelin.html">Led Zeppelin<br>
-                        <img src="images/logobandas/logoledzeppelin.jpg" title="Led Zeppelin"
-                            alt="Logo da banda Led Zeppelin com o nome da banda escrito em preto e branco com a fonte caracteristica da banda, em baixo é possivel ver algumas formas geometricas caracteristicas da banda.">
-                    </a></li>
-                <li><a href="pinkfloyd.html">Pink Floyd<br>
-                        <img src="images/logobandas/logopinkfloyd.png" title="Pink Floyd"
-                            alt="Logo da banda Pink Floyd com o nome da banda escrito em preto e branco com a fonte caracteristica da banda.">
-                    </a></li>
-                <li><a href="blacksabbath.html">Black Sabbath<br>
-                        <img src="images/logobandas/logoblacksabbath.jpg"
-                            alt="Logo da banda Black Sabbath com o nome da banda escrito em roxo com fundo preto e a fonte caracteristica da banda."
-                            title="Black Sabbath">
-                    </a></li>
-            </ol>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col mt-4">
+                        <a href="beatles.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom "
+                                src="images/logobandas/logobeatles.jpg" title="The Beatles"
+                                alt="Logo da banda The Beatles com o nome da banda escrito em preto e branco com a fonte caracteristica da banda.">
+                        </a>
+                    </div>
+                    <div class="col mt-4">
+                        <a href="queen.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom "
+                                src="images/logobandas/logoqueen.png" title="Queen"
+                                alt="Logo da banda Queen com o nome da banda escrito em preto e branco com a fonte caracteristica da banda, em cima é possivel ver dois leões segurando uma coroa e acima deles um passaro maior que os leões.">
+                        </a>
+                    </div>
+                    <div class="col mt-4">
+                        <a href="u2.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom "
+                                src="images/logobandas/logou2.jpg" title="U2"
+                                alt="Logo da banda U2 com o nome da banda escrito em azul com fundo preto e com instegrantes da banda no meio das letras 'U2'.">
+                        </a>
+                    </div>
+                    <div class="col mt-4">
+                        <a href="rollingstones.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom "
+                                src="images/logobandas/logorollingstones.jpg" title="Rolling Stones"
+                                alt="Edição de comemoração dos 50 anos da banda Rolling Stones com o logo caracterisco da banda contendo uma boca aberta com a lingua à mostra, em volta é possivel ver o nome da banda e as palavras '50 anos'.">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-sm col mt-4">
+                        <a href="ledzeppelin.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom"
+                                src="images/logobandas/logoledzeppelin.jpg" title="Led Zeppelin"
+                                alt="Logo da banda Led Zeppelin com o nome da banda escrito em preto e branco com a fonte caracteristica da banda, em baixo é possivel ver algumas formas geometricas caracteristicas da banda.">
+                        </a>
+                    </div>
+                    <div class="col col-sm col mt-4">
+                        <a href="pinkfloyd.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom"
+                                src="images/logobandas/logopinkfloyd.png" title="Pink Floyd"
+                                alt="Logo da banda Pink Floyd com o nome da banda escrito em preto e branco com a fonte caracteristica da banda.">
+                        </a>
+                    </div>
+                    <div class="col col-sm col mt-4 mb-5">
+                        <a href="blacksabbath.html">
+                            <img class="rounded img-fluid img-thumbnail img-galerycustom"
+                                src="images/logobandas/logoblacksabbath.jpg"
+                                alt="Logo da banda Black Sabbath com o nome da banda escrito em roxo com fundo preto e a fonte caracteristica da banda."
+                                title="Black Sabbath">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <a href="#logo" style="color: black;">Voltar ao topo</a>
-        <p>Valide essa página no <a href="https://validator.w3.org/" target="_blank" style="color: blue;">validator.w3</a></p>
+
     </main>
-    <footer>
-        <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
+    <footer class="bg-dark">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-8">
+                    <span class="text-white">Desenvolvido por: Daniel Wzoreck e Gustavo Pirró</span>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="#logo">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
-
 </html>

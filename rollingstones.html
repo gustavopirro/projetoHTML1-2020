@@ -5,137 +5,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Rolling Stones</title>
     <link rel="icon" href="images/music.ico">
-    <link rel="stylesheet" href="./css/rollingstones.css">
+
+    <link rel="icon" href="images/music.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/music.ico"
-        alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
-        <nav>
-            <ul id="menuNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="beatles.html">Beatles</a></li>
-                <li><a href="queen.html">Queen</a></li>
-                <li><a href="u2.html">U2</a></li>
-                <li><a href="rollingstones.html">Rolling Stones</a></li>
-                <li><a href="ledzeppelin.html">Led Zeppelin</a></li>
-                <li><a href="pinkfloyd.html">Pink Floyd</a></li>
-                <li><a href="blacksabbath.html">Black Sabbath</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <img id="logo" class="navbar-brand" style="max-height: 80px;" src="images/music.ico"
+                alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="font-size: 22px;">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beatles.html">Beatles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="queen.html">Queen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="u2.html">U2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rollingstones.html">Rolling Stones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ledzeppelin.html">Led Zeppelin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pinkfloyd.html">Pink Floyd</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blacksabbath.html">Black Sabbath</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="historia" class="margin-top">
-            <h1><u>Rolling Stones</u></h1>
-            <div class="mainText">
-
-                <article>
-                    <h3>História da banda</h3>
-                    <p>
-                        Os Rolling Stones foram um dos ícones do rock and roll dos anos 60, junto aos Beatles, nativos da Inglaterra formaram a banda em 1962, após um encontro de Mick Jagger e Keith Richards, a banda iniciou a carreira baseada em influências do Blues, do Rock e do Country americano. Ou seja, os EUA tiveram lá sua importância.
-                    </p>
-                    <br />
-                    <p>
-                        Não demorou muito para conseguirem o primeiro contrato com a Decca Records, estúdio que havia recusado os Beatles um ano antes. Ou seja, a Decca não podia dar outro mole e perder uma oportunidade de ouro dessa.
-                    </p>
-                    <br />
-                    <p>
-                        O primeiro LP do Rolling Stones que, curiosamente, só contava com uma música composta por eles. O álbum leva leva o nome da própria banda, nos anos seguintes, aí sim, todas as faixas eram composições próprias.
-                    </p>
-                    <br />
-                    <p>
-                        Apesar do sucesso, a história dos Rolling Stones também é marcada por passagens misteriosas e acontecimentos tristes. Um deles é o que diz respeito à trajetória de Brian Jones, guitarrista oficial desde o nascimento da banda. No auge do sucesso, em 1969, Brian resolve sair da banda e, pouco tempo depois, uma tragédia é anunciada nos jornais de todo o mundo. O músico foi encontrado morto, afogado em sua própria piscina. Fato esse que causou polêmica na época e, ainda hoje, é um mistério para os fãs da banda.
-                    </p>
-                </article>
-                <aside>
-                    <img id="mainPicture" src="images/rolling_stones/The-Rolling-Stones-Tattoo-You.jpg" title="Capa Albúm Tattoo You"
-                    alt="Capa do album Tattoo You do Rolling Stones, fundo em vermelho com uma imagem de uma pessoa em preto e branco com tatuagens tribais. Acima o nome da banda e do album escritos com uma fonte com linhas finas">
-                    <p>Capa do disco Tattoo You.</p>
-                    <h3 style="text-align: center;">Sumário</h3>
-                    <ol class="sumario">
-                        <li><a href="#historia">História da Banda</a></li>
-                        <li><a href="#musicas">Músicas Principais</a></li>
-                        <li><a href="#integrantes">Integrantes</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                    </ol>
-                </aside>
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs mt-5">
+                    <h1 id="historia">Rolling Stones</h1>
+                </div>
             </div>
-        </section>
-
-        <br>
-
-        <section id="musicas" class="margin-top">
-            <h3>Principais Músicas</h3>
-            <div class="topMusicas">
-                <table style="border: solid 1px black;">
-                    <tr>
-                        <th>Titulo</th>
-                        <th>Ano de Lançamento</th>
-                    </tr>
-                    <tr>
-                        <td>(I Can’t Get No) Satisfaction</td>
-                        <td>1965</td>
-                    </tr>
-                    <tr>
-                        <td>Jumpin’ Jack Flash</td>
-                        <td>1968</td>
-                    </tr>
-                    <tr>
-                        <td>Sympathy for The Devil</td>
-                        <td>1968</td>
-                    </tr>
-                    <tr>
-                        <td>Gimme Shelter</td>
-                        <td>1969</td>
-                    </tr>
-                    <tr>
-                        <td>Angie</td>
-                        <td>1973</td>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col-xs col-lg-8 mt-5">
+                    <article>
+                        <h3>História da banda</h3>
+                        <p>
+                            Os Rolling Stones foram um dos ícones do rock and roll dos anos 60, junto aos Beatles,
+                            nativos
+                            da
+                            Inglaterra formaram a banda em 1962, após um encontro de Mick Jagger e Keith Richards, a
+                            banda
+                            iniciou a carreira baseada em influências do Blues, do Rock e do Country americano. Ou seja,
+                            os
+                            EUA
+                            tiveram lá sua importância.
+                        </p>
+                        <br />
+                        <p>
+                            Não demorou muito para conseguirem o primeiro contrato com a Decca Records, estúdio que
+                            havia
+                            recusado os Beatles um ano antes. Ou seja, a Decca não podia dar outro mole e perder uma
+                            oportunidade de ouro dessa.
+                        </p>
+                        <br />
+                        <p>
+                            O primeiro LP do Rolling Stones que, curiosamente, só contava com uma música composta por
+                            eles.
+                            O
+                            álbum leva leva o nome da própria banda, nos anos seguintes, aí sim, todas as faixas eram
+                            composições próprias.
+                        </p>
+                        <br />
+                        <p>
+                            Apesar do sucesso, a história dos Rolling Stones também é marcada por passagens misteriosas
+                            e
+                            acontecimentos tristes. Um deles é o que diz respeito à trajetória de Brian Jones,
+                            guitarrista
+                            oficial desde o nascimento da banda. No auge do sucesso, em 1969, Brian resolve sair da
+                            banda e,
+                            pouco tempo depois, uma tragédia é anunciada nos jornais de todo o mundo. O músico foi
+                            encontrado
+                            morto, afogado em sua própria piscina. Fato esse que causou polêmica na época e, ainda hoje,
+                            é
+                            um
+                            mistério para os fãs da banda.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-xs col-lg-4 mt-5">
+                    <aside>
+                        <img class="rounded img-fluid" style="max-width: 100%;"
+                            src="images/rolling_stones/The-Rolling-Stones-Tattoo-You.jpg" title="Capa Albúm Tattoo You"
+                            alt="Capa do album Tattoo You do Rolling Stones, fundo em vermelho com uma imagem de uma pessoa em preto e branco com tatuagens tribais. Acima o nome da banda e do album escritos com uma fonte com linhas finas">
+                        <p>Capa do disco Tattoo You.</p>
+                        <ol class="list-group">
+                            <li class="list-group-item list-group-item-action"><a href="#historia">História da Banda</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#musicas">Músicas Principais</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#integrantes">Integrantes</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#galeria">Galeria</a></li>
+                        </ol>
+                    </aside>
+                </div>
             </div>
-        </section>
-        <section id="integrantes" class="margin-top">
-            <div class="integrantes">
-                <h3>Integrantes</h3>
-                <div class="integrantesImagens">
-                    <img src="images/rolling_stones/Mick_Jagger.jpg"
+        </div>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <section id="musicas">
+                        <h3>Principais Músicas</h3>
+                        <table class="table-hover table-striped table-bordered">
+                            <thread>
+                                <tr>
+                                    <th>Titulo</th>
+                                    <th>Ano de Lançamento</th>
+                                </tr>
+                            </thread>
+                            <tr>
+                                <td>(I Can’t Get No) Satisfaction</td>
+                                <td>1965</td>
+                            </tr>
+                            <tr>
+                                <td>Jumpin’ Jack Flash</td>
+                                <td>1968</td>
+                            </tr>
+                            <tr>
+                                <td>Sympathy for The Devil</td>
+                                <td>1968</td>
+                            </tr>
+                            <tr>
+                                <td>Gimme Shelter</td>
+                                <td>1969</td>
+                            </tr>
+                            <tr>
+                                <td>Angie</td>
+                                <td>1973</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" align="center">
+            <div class="row  mt-5">
+                <div class="col">
+                    <h3 id="integrantes">Integrantes</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/rolling_stones/Mick_Jagger.jpg"
                         alt="A foto 3x4 mostra Mick Jagger ao ar livre, há um fundo azul, ele está vestindo uma jaqueta preta com uma camisa violeta"
                         title="Mick Jagger">
-                    <img src="images/rolling_stones/Keith_Richards.jpg"
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;"
+                        src="images/rolling_stones/Keith_Richards.jpg"
                         alt="A foto 3x4 mostra Keith Richards segurando uma guitarra Fender Stratocaster na cor olimpic white com o braço e escala de Maple, o fundo da foto é preto e ele está vestindo uma camisa vermelha, sua mão direita está encostando na cabeça"
                         title="Keith Richards">
-                    <img src="images/rolling_stones/Ron_wood.jpg"
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/rolling_stones/Ron_wood.jpg"
                         alt="A foto 3x4 mostra Ron Wood ao ar liver, ao fundo uma porta de garagem branca, ele está com o cabelo preto, vetindo uma blusa cinza"
                         title="Ron Wood">
-                    <img src="images/rolling_stones/Charlie_Watts.jpg"
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/rolling_stones/Charlie_Watts.jpg"
                         alt="A foto 3x4 Charlie Watts em um evento, ele está de cabelo branco vestindo um terno preto"
                         title="Charlie Watts">
                 </div>
             </div>
-        </section>
-        <section id="galeria" class="margin-top">
-            <h3>Galeria</h3>
-            <div class="gallery">
-                <img src="images/rolling_stones/galeria1.jpg" title="Ron e Keith detonando num solo monstro de guitarra"
-                    alt="Na imagem Keith Richards e Ron Wood estão tocando guitarra juntos em um show, Keith Richards segura uma guitarra Fender Telecaster e Ron Wood uma guitarra Fender Stratocaster, Ron está vestindo uma jaqueta violeta, e Keith uma jaqueta azul">
-                <img title="Apresentação ao vivo da banda" src="images/rolling_stones/galeria2.jpg"
-                    alt="Imagem de uma apresentação ao vivo da banda, fundo escuro, no palco há os integrantes da banda com seus respectivos instrumentos, Mick Jagger ao centro cantando">
-                <img title="Ron Wood e Mick Jagger após uns gole" src="images/rolling_stones/galeria3.jpg"
-                    alt="A imagem em preto e branco mostra Ron Wood e Mick Jagger juntos, Ron está com o braço esquerdo por cima de Mick e olhando para sua esquerda, Mick está olhando para a foto">
-                <img title="Integrantes da banda fazendo modinha" src="images/rolling_stones/galeria4.jpeg"
-                    alt="Imagem em preto e branco dos integrantes da banda, há mais uma pessoa desconhecida junto, todos estão olhando para a foto">
+        </div>
+
+
+        <div class="container" align="center">
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 id="galeria">Galeria</h3>
+                </div>
             </div>
-        </section>
-        <a href="#logo" style="color: black;">Voltar ao topo</a>
-        <p>Valide essa página no <a href="https://validator.w3.org/" target="_blank" style="color: blue;">validator.w3</a></p>
+
+            <div class="row">
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;" src="images/rolling_stones/galeria1.jpg"
+                        title="Ron e Keith detonando num solo monstro de guitarra"
+                        alt="Na imagem Keith Richards e Ron Wood estão tocando guitarra juntos em um show, Keith Richards segura uma guitarra Fender Telecaster e Ron Wood uma guitarra Fender Stratocaster, Ron está vestindo uma jaqueta violeta, e Keith uma jaqueta azul">
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;" title="Apresentação ao vivo da banda" src="images/rolling_stones/galeria2.jpg"
+                        alt="Imagem de uma apresentação ao vivo da banda, fundo escuro, no palco há os integrantes da banda com seus respectivos instrumentos, Mick Jagger ao centro cantando">
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;" title="Ron Wood e Mick Jagger após uns gole" src="images/rolling_stones/galeria3.jpg"
+                        alt="A imagem em preto e branco mostra Ron Wood e Mick Jagger juntos, Ron está com o braço esquerdo por cima de Mick e olhando para sua esquerda, Mick está olhando para a foto">
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;" title="Integrantes da banda fazendo modinha" src="images/rolling_stones/galeria4.jpeg"
+                        alt="Imagem em preto e branco dos integrantes da banda, há mais uma pessoa desconhecida junto, todos estão olhando para a foto">
+                </div>
+            </div>
+        </div>
+
+
     </main>
-    <footer>
-        <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
+    <footer class="bg-dark mt-5">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-8">
+                    <span class="text-white">Desenvolvido por: Daniel Wzoreck e Gustavo Pirró</span>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="#logo">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

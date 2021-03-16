@@ -5,128 +5,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Beatles</title>
     <link rel="icon" href="images/music.ico">
-    <link rel="stylesheet" href="./css/beatles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/music.ico"
-        alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
-        <nav>
-            <ul id="menuNav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="beatles.html">Beatles</a></li>
-                <li><a href="queen.html">Queen</a></li>
-                <li><a href="u2.html">U2</a></li>
-                <li><a href="rollingstones.html">Rolling Stones</a></li>
-                <li><a href="ledzeppelin.html">Led Zeppelin</a></li>
-                <li><a href="pinkfloyd.html">Pink Floyd</a></li>
-                <li><a href="blacksabbath.html">Black Sabbath</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <img id="logo" class="navbar-brand" style="max-height: 80px;" src="images/music.ico"
+                alt="A imagem mostra o simbolo de uma nota musical dupla usada em partituras com a cor branca e o fundo da imagem em vermelho.">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="font-size: 22px;">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beatles.html">Beatles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="queen.html">Queen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="u2.html">U2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rollingstones.html">Rolling Stones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ledzeppelin.html">Led Zeppelin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pinkfloyd.html">Pink Floyd</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blacksabbath.html">Black Sabbath</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section id="historia" class="margin-top">
-            <h1><u>The Beatles</u></h1>
-            <div class="mainText">
-
-                <article>
-                    <h3>História da banda</h3>
-                    <p>	A banda Beatles começou em 1960 no Reino Unido na cidade de Liverpool, era formada pelos integrantes <b>John Lennon, Ringo Starr, Paul McCartney e George Harrison</b>, antes de se tornarem os beatles em 1960, o integrante John Lennon era parte de uma banda em sua escola em 1957.
-                        Neste mesmo ano John Lennon convidou Paul McCartney para sua banda, e em 1958 George Harrison foi convidado para a banda também e apenas em 1960 eles mudariam o nome da banda que era <i>Quarry Bank School</i> para o conhecido nome <b><i>The Beatles</i></b>.
-                        <br> Em 1961 a banda faria sua primeira apresentação no <i>Tavern Club</i> onde ficou tocando até 1963, em 1962 assinaram o contrato com o empresario Briam Epstein, que fez então uma mudança no visual dos integrantes, que na época utilizavam roupas de couro pelas roupas formais que virariam caracteristica da banda no futuro.
-                        <br> Em 1962 os beatles tomaram a forma conhecida com apenas os quatro integrantes principais além de gravar seu primeiro albúm e aparecer na televisão.
-                        <br> Em 1969 eles gravaram o penultimo albúm antes da saida de John Lennon no grupo, anunciando em 1970 o fim da banda.
-                    </p>
-                </article>
-                <aside>
-                    <img id="mainPicture" src="images/beatles/beatles.jpg" title="Capa Albúm Abbey Road"
-                    alt="A imagem mostra a capa do famoso albúm Abbey Road com os quatro integrantes da banda atravessando a rua na faixa de pedestres enfileirados vestindo ternos com carros atrás deles estacionados na rua.">
-                    <p>Capa do disco Abbey Road da Banda.</p>
-                    <h3 style="text-align: center;">Sumário</h3>
-                    <ol class="sumario">
-                        <li><a href="#historia">História da Banda</a></li>
-                        <li><a href="#musicas">Músicas Principais</a></li>
-                        <li><a href="#integrantes">Integrantes</a></li>
-                        <li><a href="#galeria">Galeria</a></li>
-                    </ol>
-                </aside>
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs mt-5">
+                    <h1>The Beatles</h1>
+                </div>
             </div>
-        </section>
+            <div class="row">
+                <div class="col-xs col-lg-8 mt-5">
+                    <article>
+                        <h3 id=historia>História da banda</h3>
+                        <p> A banda Beatles começou em 1960 no Reino Unido na cidade de Liverpool, era formada pelos
+                            integrantes <b>John Lennon, Ringo Starr, Paul McCartney e George Harrison</b>, antes de
+                            se
+                            tornarem os beatles em 1960, o integrante John Lennon era parte de uma banda em sua
+                            escola
+                            em
+                            1957.
+                            Neste mesmo ano John Lennon convidou Paul McCartney para sua banda, e em 1958 George
+                            Harrison
+                            foi convidado para a banda também e apenas em 1960 eles mudariam o nome da banda que era
+                            <i>Quarry Bank School</i> para o conhecido nome <b><i>The Beatles</i></b>.
+                            <br> Em 1961 a banda faria sua primeira apresentação no <i>Tavern Club</i> onde ficou
+                            tocando
+                            até 1963, em 1962 assinaram o contrato com o empresario Briam Epstein, que fez então uma
+                            mudança
+                            no visual dos integrantes, que na época utilizavam roupas de couro pelas roupas formais
+                            que
+                            virariam caracteristica da banda no futuro.
+                            <br> Em 1962 os beatles tomaram a forma conhecida com apenas os quatro integrantes
+                            principais
+                            além de gravar seu primeiro albúm e aparecer na televisão.
+                            <br> Em 1969 eles gravaram o penultimo albúm antes da saida de John Lennon no grupo,
+                            anunciando
+                            em 1970 o fim da banda.
+                        </p>
+                    </article>
+                </div>
 
-        <br>
+                <div class="col-xs col-lg-4 mt-5">
+                    <aside>
+                        <img class="rounded img-fluid" style="max-width: 100%;" src="images/beatles/beatles.png"
+                            title="Capa Albúm Abbey Road"
+                            alt="A imagem mostra a capa do famoso albúm Abbey Road com os quatro integrantes da banda atravessando a rua na faixa de pedestres enfileirados vestindo ternos com carros atrás deles estacionados na rua.">
+                        <p>Capa do disco Abbey Road da Banda.</p>
 
-        <section id="musicas" class="margin-top">
-            <h3>Principais Músicas</h3>
-            <div class="topMusicas">
-                <table style="border: solid 1px black;">
-                    <tr>
-                        <th>Titulo</th>
-                        <th>Ano de Lançamento</th>
-                    </tr>
-                    <tr>
-                        <td>Let it Be</td>
-                        <td>1970</td>
-                    </tr>
-                    <tr>
-                        <td>Don't Let Me Down</td>
-                        <td>1969</td>
-                    </tr>
-                    <tr>
-                        <td>Hey Jude</td>
-                        <td>1968</td>
-                    </tr>
-                    <tr>
-                        <td>Help!</td>
-                        <td>1965</td>
-                    </tr>
-                    <tr>
-                        <td>Come Together</td>
-                        <td>1969</td>
-                    </tr>
-                </table>
+                        <ol class="list-group">
+                            <li class="list-group-item list-group-item-action"><a href="#historia">História da
+                                    Banda</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="#musicas">Principais
+                                    Músicas</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="#integrantes">Integrantes</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="#galeria">Galeria</a></li>
+                        </ol>
+                    </aside>
+                </div>
             </div>
-        </section>
-        <section id="integrantes" class="margin-top">
-            <div class="integrantes">
-                <h3>Integrantes</h3>
-                <div class="integrantesImagens">
-                    <img src="images/beatles/johnlenon.jpg"
+        </div>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <section>
+                        <h3 id="musicas">Principais Músicas</h3>
+                        <table class="table-hover table-striped table-bordered">
+                            <thread>
+                                <tr>
+                                    <th>Título</th>
+                                    <th>Ano de Lançamento</th>
+                                </tr>
+                            </thread>
+                            <tr>
+                                <td>Let it Be</td>
+                                <td>1970</td>
+                            </tr>
+                            <tr>
+                                <td>Don't Let Me Down</td>
+                                <td>1969</td>
+                            </tr>
+                            <tr>
+                                <td>Hey Jude</td>
+                                <td>1968</td>
+                            </tr>
+                            <tr>
+                                <td>Help!</td>
+                                <td>1965</td>
+                            </tr>
+                            <tr>
+                                <td>Come Together</td>
+                                <td>1969</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" align="center">
+            <div class="row  mt-5">
+                <div class="col">
+                    <section>
+                        <h3 id="integrantes">Integrantes</h3>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/beatles/johnlenon.jpg"
                         alt="A foto 3x4 mostra em preto e branco John Lenon quando ainda era jovem com uma expressão sorridente."
                         title="John Lenon">
-                    <img src="images/beatles/paulmccartney.png"
+                </div>
+                <div class="col-xs col-md  mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/beatles/paulmccartney.png"
                         alt="A foto 3x4 mostra em preto e branco Paul McCartney quando ainda era jovem."
                         title="Paul McCartney">
-                    <img src="images/beatles/georgeharrison.jpg"
+                </div>
+                <div class="col-xs  col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/beatles/georgeharrison.jpg"
                         alt="A foto 3x4 mostra em preto e branco George Harrison quando ainda era jovem com uma expressão seria olhando diretamente para a camêra."
                         title="George Harrison">
-                    <img src="images/beatles/ringostarr.jpg"
+                </div>
+                <div class="col-xs  col-md mt-4">
+                    <img class="rounded img-fluid" style="max-width: 90%;" src="images/beatles/ringostarr.png"
                         alt="A foto 3x4 mostra em preto e branco Ringo Starr quando ainda era jovem com uma expressão confusa ou preocupada."
                         title="Ringo Starr">
                 </div>
+
             </div>
-        </section>
-        <section id="galeria" class="margin-top">
-            <h3>Galeria</h3>
-            <div class="gallery">
-                <img src="images/beatles/beatles.jpg" title="Albúm Abbey Road"
-                    alt="A imagem mostra a capa do famoso albúm Abbey Road com os quatro integrantes da banda atravessando a rua na faixa de pedestres enfileirados vestindo ternos com carros atrás deles estacionados na rua. ">
-                <img title="Beatles show preto e branco" src="images/beatles/beatlesinstrumentos.jpg"
-                    alt="A imagem mostra em preto e branco os integrantes da banda Beatles ainda jovens tocando seus instrumentos e cantando.">
-                <img title="Beatles recebendo premio" src="images/beatles/beatlespremio.jpg"
-                    alt="A imagem mostra em preto e branco os integrantes da banda beatles um ao lado do outro recebendo a premiaçao do disco de ouro junto ao empresario da banda Brian Epstein.">
-                <img title="Beatles colorida artificialmente" src="images/beatles/beatlescolorized.jpg"
-                    alt="A imagem colorida artificialmente mostra os integrantes da banda Beatles ainda jovens tocando seus instrumentos e cantando.">
+        </div>
+
+
+
+        <div class="container" align="center">
+            <div class="row mt-5">
+                <div class="col">
+                    <h3 id="galeria">Galeria</h3>
+                </div>
             </div>
-        </section>
-        <a href="#logo" style="color: black;">Voltar ao topo</a>
-        <p>Valide essa página no <a href="https://validator.w3.org/" target="_blank" style="color: blue;">validator.w3</a></p>
+            <div class="row">
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        src="images/beatles/beatles.png" title="Albúm Abbey Road"
+                        alt="A imagem mostra a capa do famoso albúm Abbey Road com os quatro integrantes da banda atravessando a rua na faixa de pedestres enfileirados vestindo ternos com carros atrás deles estacionados na rua. ">
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        title="Beatles show preto e branco" src="images/beatles/beatlesinstrumentos.jpg"
+                        alt="A imagem mostra em preto e branco os integrantes da banda Beatles ainda jovens tocando seus instrumentos e cantando.">
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        title="Beatles recebendo premio" src="images/beatles/beatlespremio.png"
+                        alt="A imagem mostra em preto e branco os integrantes da banda beatles um ao lado do outro recebendo a premiaçao do disco de ouro junto ao empresario da banda Brian Epstein.">
+                </div>
+                <div class="col-xs col-md mt-4">
+                    <img class="rounded img-fluid  img-thumbnail" style="max-width: 90%;"
+                        title="Beatles colorida artificialmente" src="images/beatles/beatlescolorized.png"
+                        alt="A imagem colorida artificialmente mostra os integrantes da banda Beatles ainda jovens tocando seus instrumentos e cantando.">
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p><strong>Desenvolvido por:</strong> Daniel Wzoreck e Gustavo Pirró</p>
+    <footer class="bg-dark mt-5">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-8">
+                    <span class="text-white">Desenvolvido por: Daniel Wzoreck e Gustavo Pirró</span>
+                </div>
+                <div class="col-4 text-right">
+                    <a href="#logo">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
