@@ -29,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav" style="font-size: 22px;">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="beatles.html">Beatles</a></li>
                     <li class="nav-item"><a class="nav-link" href="queen.html">Queen</a></li>
                     <li class="nav-item"><a class="nav-link" href="u2.html">U2</a></li>
@@ -37,25 +37,42 @@
                     <li class="nav-item"><a class="nav-link" href="ledzeppelin.html">Led Zeppelin</a></li>
                     <li class="nav-item"><a class="nav-link" href="pinkfloyd.html">Pink Floyd</a></li>
                     <li class="nav-item"><a class="nav-link" href="blacksabbath.html">Black Sabbath</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <h2>Formulário para contato</h2>
-        <form action="/action_page.php" id="contato">
-            <label for="nome">Nome:</label><br>
-            <input type="text" name="nome" id="nome"/><br><br>
-            <label for="telefone" >Telefone:</label><br>
-            <input type="text" name="telefone" id="telefone"/><br><br>
-            <label for="email">Email:</label><br>
-            <input type="text" name="email" id="email" /><br><br>
-            <label for="mensagem">Mensagem:</label><br>
-            <textarea name="mensagem" cols="30" rows="10" id="mensagem"></textarea>
-            <br><br>
-            <button class="btn btn-secondary">Enviar</button>
-        </form>
+        <div class="container mt-5 mb-5">
+            <h1>Formulário para contato</h1>
+
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" placeholder="Informe seu nome" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" placeholder="Informe seu telefone" id="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">E-mail:</label>
+                    <input type="text" class="form-control" placeholder="Informe seu e-mail" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Conteúdo:</label>
+                    <textarea class="form-control" rows="5" id="conteudo"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /> 
+        </div>
     </main>
     <footer class="bg-dark">
         <div class="container p-3">
